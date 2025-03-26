@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 1 - HTML Basics</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        /* Styling tombol kembali */
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(51, 154, 116);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color:rgb(42, 119, 48);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../programming.html">Programming Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Materi 1: HTML Dasar</h1>
+        
+        <section>
+            <h2>1. Heading dalam HTML</h2>
+            <p>Berikut contoh penggunaan heading dalam HTML dari H1 sampai H6:</p>
+            <pre>
+&lt;h1&gt;Ini adalah Heading H1&lt;/h1&gt;
+&lt;h2&gt;Ini adalah Heading H2&lt;/h2&gt;
+&lt;h3&gt;Ini adalah Heading H3&lt;/h3&gt;
+&lt;h4&gt;Ini adalah Heading H4&lt;/h4&gt;
+&lt;h5&gt;Ini adalah Heading H5&lt;/h5&gt;
+&lt;h6&gt;Ini adalah Heading H6&lt;/h6&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>2. Paragraf dalam HTML</h2>
+            <p>Untuk menambahkan paragraf dalam HTML, gunakan tag <code>&lt;p&gt;</code>:</p>
+            <pre>
+&lt;p&gt;Ini adalah contoh paragraf dalam HTML.&lt;/p&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>3. Text Alignment</h2>
+            <p>kita dapat mengatur perataan teks dengan atribut <code>text-align</code>:</p>
+            <pre>
+&lt;p text-align="left"&gt;Teks ini rata kiri.&lt;/p&gt;
+&lt;p text-align="center"&gt;Teks ini rata tengah.&lt;/p&gt;
+&lt;p text-align="right"&gt;Teks ini rata kanan.&lt;/p&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>4. Membuat Baris Baru</h2>
+            <p>Gunakan tag <code>&lt;br&gt;</code> untuk membuat baris baru:</p>
+            <pre>
+&lt;p&gt;Ini adalah baris pertama.&lt;br&gt;Ini adalah baris kedua.&lt;/p&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>5. Format Superscript</h2>
+            <p>Untuk membuat teks superscript, gunakan tag <code>&lt;sup&gt;</code>:</p>
+            <pre>
+&lt;p&gt;Rumus matematika: E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+            </pre>
+        </section>
+
+        <!-- Tombol Kembali -->
+        <a href="../programming.html" class="back-button">← Kembali ke Programming Web</a>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Adhwa Pranaja Widyadana</p>
+    </footer>
+</body>
+</html>
