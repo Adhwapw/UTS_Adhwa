@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 4 - Pengenalan PHP</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(51, 154, 116);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: rgb(42, 119, 48);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.php">About Me</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+                <li><a href="../programming.php">Programming Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Meeting 4: Pengenalan PHP</h1>
+        
+        <section>
+            <h2>1. Contoh Variabel dalam PHP</h2>
+            <pre>
+&lt;?php
+$username = "Cecep";
+$nama = 22;
+
+echo "Username: " . $username . "&lt;br&gt;";
+echo "Nama: " . $nama;
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Contoh Konstanta dalam PHP</h2>
+            <pre>
+&lt;?php
+define("SITE_NAME", "Pemrograman Web");
+echo "Selamat datang di " . SITE_NAME;
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Contoh Operator Aritmatika</h2>
+            <pre>
+&lt;?php
+$a = 10;
+$b = 5;
+$hasil = $a + $b;
+echo "Hasil penjumlahan: " . $hasil;
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>4. Contoh Operator Relasional</h2>
+            <pre>
+&lt;?php
+$a = 10;
+$b = 5;
+$hasil = ($a > $b);
+var_dump($hasil);
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>5. Contoh Operator Logika</h2>
+            <pre>
+&lt;?php
+$a = true;
+$b = false;
+$hasil = $a && $b;
+var_dump($hasil);
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>6. Contoh Program Array</h2>
+            <pre>
+&lt;?php
+$nama = array("Cecep", "Asep", "Dudu");
+echo "Nama pertama: " . $nama[0];
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>7. Contoh Program OOP di PHP</h2>
+            <pre>
+&lt;?php
+class Mobil {
+    public $merk;
+    public $tahun;
+
+    function __construct($merk, $tahun) {
+        $this->merk = $merk;
+        $this->tahun = $tahun;
+    }
+
+    function getInfo() {
+        return "Mobil: " . $this->merk . " Tahun: " . $this->tahun;
+    }
+}
+
+$myCar = new Mobil("Toyota", 2022);
+echo $myCar->getInfo();
+?&gt;
+            </pre>
+        </section>
+
+        <!-- Tombol Kembali -->
+        <a href="../programming.php" class="back-button">← Kembali ke Programming Web</a>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Adhwa Pranaja Widyadana</p>
+    </footer>
+</body>
+</html>
