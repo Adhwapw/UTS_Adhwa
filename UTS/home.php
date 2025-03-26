@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        img {
+            border-radius: 20px;
+            width: 180px;
+            height: 180px;
+            border: 4px solid #35424a;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 15px;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .social-buttons {
+            margin-top: 15px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            margin: 5px;
+            color: white;
+        }
+
+        .facebook { background: #35424a; }
+        .twitter { background: #1da1f2; }
+        .instagram { background: #e4405f; }
+
+        .social-buttons a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="about.php">About Me</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="programming.php">Programming Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Ucapan Selamat Datang -->
+    <section style="text-align: center; padding: 40px; background: #f8f8f8; margin-bottom: 30px; border-radius: 10px;">
+        <h1>Selamat Datang di Website Personal Saya</h1>
+        <p>Website ini berisi tentang materi Pemrograman Berbasis Web yang telah saya pelajari Setengah Semester.</p>
+        
+    </section>
+
+    <!-- Section Profil Mahasiswa -->
+    <section style="max-width: 800px; margin: 0 auto; padding: 30px; background: white; border-radius: 12px; 
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); text-align: center;">
+        <img src="Gambar/Pas Foto.png" alt="Profile Picture">
+        <p>Halo! Saya <strong>Adhwa Pranaja Widyadana</strong>, seorang mahasiswa yang sedang menempuh pendidikan S1 Informatika di Universitas Singaperbangsa Karawang </p>
+        
+
+        <div class="social-buttons">
+            <a href="https://facebook.com" target="_blank" class="facebook">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="twitter">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="instagram">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Section About Me -->
+    <section style="max-width: 800px; margin: 30px auto; padding: 30px; background: white; border-radius: 12px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); text-align: center;">
+        <h2>About Me</h2>
+        <p><strong>Nama:</strong> Adhwa Pranaja Widyadana</p>
+        <p><strong>Pendidikan:</strong> S1 Informatika Universitas Singaperbangsa Karawang</p>
+
+        <div class="info-container">
+            <div class="info-box">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP & MySQL</li>
+                    <li>UI/UX Design</li>
+                    <li>Machine Learning Basics</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Pengembangan Aplikasi Dessktop SPP SekolahL</li>
+                    <li>Proyek UI/UX untuk aplikasi mobile</li>
+                    <li>Pengembangan chatbot dengan AI</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adhwa Pranaja Widyadana</p>
+    </footer>
+</body>
+
+</html>

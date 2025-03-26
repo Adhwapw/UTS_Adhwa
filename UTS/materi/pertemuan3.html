@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 3 - JavaScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(51, 154, 116);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: rgb(42, 119, 48);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home.php">Home</a></li>
+                <li><a href="../about.php">About Me</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+                <li><a href="../programming.php">Programming Web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Materi 3: JavaScript</h1>
+        
+        <section>
+            <h2>1. Alert dengan JavaScript</h2>
+            <pre>
+&lt;button onclick="alert('Saya sedang belajar JavaScript')"&gt;Klik Saya&lt;/button&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Internal JavaScript</h2>
+            <pre>
+&lt;script&gt;
+    alert("Halo ini merupakan alert yang saya buat dengan JavaScript");
+&lt;/script&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. External JavaScript</h2>
+            <pre>
+// script.js
+alert('Ini merupakan contoh alert JavaScript yang dibuat di file eksternal');
+            </pre>
+        </section>
+
+        <!-- Tombol Kembali -->
+        <a href="../programming.php" class="back-button">← Kembali ke Programming Web</a>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Adhwa Pranaja Widyadana</p>
+    </footer>
+</body>
+</html>
